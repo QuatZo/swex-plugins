@@ -57,7 +57,7 @@ module.exports = {
         stars: rune_class,
         set: set_id,
         level: upgrade_curr,
-        cost: this.rune_upgrade_cost[rune_class][upgraded ? upgrade_curr - 1 : upgrade_curr],
+        cost: this.rune_upgrade_cost[rune_class > 10 ? rune_class - 10 : rune_class][upgraded ? upgrade_curr - 1 : upgrade_curr],
         success: upgraded,
     }
 
