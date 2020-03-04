@@ -1,0 +1,11 @@
+{
+    "name": "sw-statistics-logger",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/QuatZo/swex-plugins"
+    },
+    "dependencies": {
+        "sw-exporter-plugin-version-checker": "github:chinleung/sw-exporter-plugin-version-checker"
+    }
+}
