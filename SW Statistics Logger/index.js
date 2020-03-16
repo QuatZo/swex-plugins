@@ -111,9 +111,9 @@ module.exports = {
         proxy.log({ type: 'error', source: 'plugin', name: this.pluginName, message: `Error: ${error.message}` });
         return;
       }
-      if (response.statusCode === 200 || response.statusCode === 201) {
+      if (response.statusCode === 201) {
         proxy.log({ type: 'success', source: 'plugin', name: this.pluginName, message: `${command} logged successfully. Thanks for contributing!` });
-      } else {
+      } else if (response.statusCode !== 200) {
         proxy.log({
           type: 'error',
           source: 'plugin',
@@ -142,7 +142,8 @@ module.exports = {
       }
       if (response.statusCode === 201) {
         proxy.log({ type: 'success', source: 'plugin', name: this.pluginName, message: `${command} logged successfully. Thanks for contributing!` });
-      } else {
+      } 
+      else if (response.statusCode !== 200) {
         proxy.log({
           type: 'error',
           source: 'plugin',
