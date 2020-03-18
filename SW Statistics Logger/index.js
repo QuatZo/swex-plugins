@@ -10,7 +10,7 @@ module.exports = {
 
   pluginName: 'SWStatisticsLogger',
   pluginDescription: 'Sends profile & any runs data to SW Statistics.',
-  swstatsHref: 'http://swstats.info/api',
+  swstatsHref: 'https://swstats.info/api',
 
   init(proxy, config) {
     versionChecker.proceed({
