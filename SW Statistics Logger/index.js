@@ -62,7 +62,7 @@ module.exports = {
           type: 'error',
           source: 'plugin',
           name: this.pluginName,
-          message: `Request failed: Server responded with code: ${response.statusCode}`
+          message: `Request failed: Server responded with code: ${response.statusCode} and message: ${response.body}`
         });
       }
     });
@@ -118,7 +118,7 @@ module.exports = {
           type: 'error',
           source: 'plugin',
           name: this.pluginName,
-          message: `Request failed: Server responded with code: ${response.statusCode}`
+          message: `Request failed: Server responded with code: ${response.statusCode} and message: ${response.body}`
         });
       }
     });
@@ -148,7 +148,7 @@ module.exports = {
           type: 'error',
           source: 'plugin',
           name: this.pluginName,
-          message: `Request failed: Server responded with code: ${response.statusCode}`
+          message: `Request failed: Server responded with code: ${response.statusCode} and message: ${response.body}`
         });
       }
     });
